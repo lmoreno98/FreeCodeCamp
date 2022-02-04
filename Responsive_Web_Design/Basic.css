@@ -1,0 +1,48 @@
+/* First type to change a color*/
+h2{
+    color:blue;
+    /* Upload a new font in the html code and uses here */
+    font-family: Lobster;
+
+}
+/* Second type to change a color look the html code of the first <p>*/
+
+.red-text {
+    color: red;
+
+    /* Change the font size */
+    font-size: 16px;
+
+    /* Change the font type and put other if the first arent available*/
+    font-family: monospace, Lobster;
+    }
+
+/* Resize of an image*/
+.smaller-img{
+    width: 100px;
+
+    /* Border corners*/
+    border-radius: 10px;
+}
+
+/* Border Creation*/
+.thick-green-border{
+    border-color: green;
+    border-style: solid;
+    border-width: 10px;
+}
+
+/* Make a circle of the photo*/
+.cirlcle-corners{
+    border-radius: 50%;
+}
+
+/* Make a silver background with a class*/
+.silver-background{
+    background-color: silver;
+}
+
+/* Make a green background with an id*/
+#cat-photo-form{
+    background-color: green;
+}
