@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<meta charset="UTF-8"
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="Basic.css">
+<!-- Upload a font for the css code-->
+<link rel="stylesheet" type="text/css" href = "https://fonts.googleapis.com/css?family=Lobster"> 
 <head>
-    <h2>CatPhotoApp</h2>
-</head>
+    <h2 class = "thick-green-border">CatPhotoApp</h2>
+  </head>
 
 <main>
-
-    <!-- Upload a image-->
-    <img id="CatPhoto"src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+  <!-- Paragraph with a red style and a hyperlink empty-->
+    <p class = "red-text">Click here to view more <a href="#">cat photos</a>.</p>
+    <!-- Upload a image | For two class we put class = "class1 class2"-->
+    <img class="smaller-img thick-green-border" id="CatPhoto"src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
 
     <!-- Create a link inside a img-->
-    <a href="https://www.freecatphotoapp.com"><img id="CatPhoto"src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+    <a href="https://www.freecatphotoapp.com"><img class = "cirlcle-corners smaller-img" id="CatPhoto"src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
     <!-- Create a link in a text -->
     <a href="https://www.freecatphotoapp.com"id="CatPhoto-href">cat photos</a>
 
@@ -20,26 +24,29 @@
   <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
   <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
   
-  <p>Things that cat likes </p>
+  <div class = "silver-background">
+    <p>Things that cat likes </p>
+    
+    <!-- Create a list-->
+    <ul>   
+      <li>Milk</li>
+      <li>Fish</li>
+    </ul>
+    <p>Thinks that cat dont like</p>
+    <!-- Create a order list-->
+    <ol>
+      <li>Water</li>
+      <li>Dogs</li>
+    </ol>
+  </div>
   
-  <!-- Create a list-->
-  <ul>   
-    <li>Milk</li>
-    <li>Fish</li>
-  </ul>
-  <p>Thinks that cat dont like</p>
-  <!-- Create a order list-->
-  <ol>
-    <li>Water</li>
-    <li>Dogs</li>
-  </ol>
-
-  <!-- Create a input   -->
-  <input type="text" placeholder="This is a placeholder">
-
   <!-- The forms is to insert and submite something-->
-  <form action="https://www.freecatphotoapp.com/submit-cat-photo">
-
+  <!-- Put and id to the form-->
+  <form id = "cat-photo-form"action="https://www.freecatphotoapp.com/submit-cat-photo">
+ 
+    <!-- Create a input   -->
+    <input type="text" placeholder="This is a placeholder">
+    
     <!-- To make a input always to be fill we use required -->
     <input placeholder="Write here to submit something" required >
     
