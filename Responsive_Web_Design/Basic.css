@@ -1,3 +1,10 @@
+/* Change the background color*/
+body{
+    /* Create a variable to change color*/
+    --backg-color: rgba(23, 161, 5, 0.521); 
+    background-color: #a2f560;
+}
+
 /* First type to change a color*/
 h2{
     color:blue;
@@ -27,7 +34,7 @@ h2{
 
 /* Border Creation*/
 .thick-green-border{
-    border-color: green;
+    border-color: var(--backg-color);
     border-style: solid;
     border-width: 10px;
 }
@@ -44,5 +51,11 @@ h2{
 
 /* Make a green background with an id*/
 #cat-photo-form{
-    background-color: green;
+    background-color: var(--backg-color);
+}
+
+/* Changing the margin of all the check inputs */
+
+[type = "checkbox"]{
+    margin: 10px 0px 15px 0px;
 }
