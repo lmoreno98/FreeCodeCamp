@@ -5,9 +5,15 @@ h4{
     /* Change the background color */
     background-color:rgba(45,45,45,0.1);
     font-size: 24px;
+    /* Make the text in uppercase */
+    text-transform: uppercase;
+    /* Tell the thickness of the letter */
+    font-weight: 800;
 }
 .link{
     margin-right: 20px;
+    /* opacity of the text between 0-1 */
+    opacity: 0.7;
 }
 .fullCard{
     border: 1px solid #ccc;
@@ -19,11 +25,25 @@ h4{
 .cardContent {
     padding: 10px;
   }
-.p-justify{
+p{
     /* Justify the content */
     text-align:justify;
+    /* Space between lines in the text*/
+    line-height: 25px;
+
+    /* Position relative make us to move the object no
+    matter the possition of what we have around */
+    position:relative;
+    /* top bottom left right tell where the component
+    have to stay (always is the contrare) */
+    top: 10px;
 }
-/* Make a blur effect on the card */
+/* Make a blur effect on the card  in the outside*/
 #thumbnail{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);  
   }
+
+/* The class hover make something when the click is on him */
+.link:hover{
+    color: red;
+}
