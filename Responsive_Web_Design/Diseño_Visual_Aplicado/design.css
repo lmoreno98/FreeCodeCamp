@@ -31,8 +31,9 @@ p{
     /* Space between lines in the text*/
     line-height: 25px;
 
-    /* Position relative make us to move the object no
-    matter the possition of what we have around */
+    /* Position relative make us to move the object*/
+    /* Position absolute or fixed make us to move the object
+    no matter what is up or down */
     position:relative;
     /* top bottom left right tell where the component
     have to stay (always is the contrare) */
@@ -46,4 +47,27 @@ p{
 /* The class hover make something when the click is on him */
 .link:hover{
     color: red;
+}
+/*---------------------------------------------Boxes-------------------------------------*/
+/* To make 2 boxes one beside the other we use this line of code */
+h1{
+    margin-left:auto;
+}
+#left {
+    width: 50%;
+    float:left;
+}
+#right {
+    float:right;
+    width: 40%;
+
+    /* z-index property let us specify which box were going to show up if we have to boxes 
+    in the sames coordinates is an integer number*/
+    z-index: 2;
+}
+aside, section {
+    padding: 2px;
+    background-color: #ccc;
+    /* Making colors with hsl they have 3 input hue, saturation and ligthness */
+    color:  hsl(120, 100%, 50%)
 }
