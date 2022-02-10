@@ -52,6 +52,8 @@ p{
 /* To make 2 boxes one beside the other we use this line of code */
 h1{
     margin-left:auto;
+    /* Create a background color in gradient */
+    background: linear-gradient(35deg,#CCFFFF,#FFCCCC);
 }
 #left {
     width: 50%;
@@ -70,4 +72,69 @@ aside, section {
     background-color: #ccc;
     /* Making colors with hsl they have 3 input hue, saturation and ligthness */
     color:  hsl(120, 100%, 50%)
+}
+
+.box1{
+    border-radius: 20px;
+    width: 50%;
+    height: 400px;
+    margin-top: 10%;
+    /* Create the repeted linear gradient */
+    background: repeating-linear-gradient(
+      45deg,
+      yellow 0px,
+      green 40px,
+      black 40px,
+      blue 80px
+    );
+    /* Scale property is to change the size by the percentage */
+    transform:scale(0.5);
+    }
+.box1:hover{
+    /* Transform when the click is in the box */
+    transform:scale(0.2);
+    /* Whith skewX and skewY we tilt the box when the click is in the box */
+    transform:skewX(10deg);
+    }
+
+body{
+    /* Put a background color of a img */
+    background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png");
+}
+
+/* Creation of a heart with before and after */
+/* First rectangle of base */
+.heart {
+position: absolute;
+margin: auto;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-color: pink;
+height: 50px;
+width: 50px;
+transform: rotate(-45deg) ;
+  }
+
+/* The rectangle moved and transform into a circle */
+.heart::after {
+    content: "";
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+}
+.heart::before {
+    content: "" ;
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
 }
