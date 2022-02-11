@@ -138,3 +138,49 @@ transform: rotate(-45deg) ;
     top: -25px;
     left: 0px;
 }
+
+/* Creation of animations */
+.rainbow-box{
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+    animation-name: rainbow;
+    animation-duration: 4s;
+    /* making infinite the animation */ 
+    animation-iteration-count: infinite;
+    /* animation-timing-function has (linear, ease-out, ease-in) that tell 
+    the animation how to acelerate;
+}
+/* raimbow animations */
+@keyframes rainbow {
+    0%{
+        background-color:blue;
+    }
+    50%{
+        background-color:green;
+    }
+    100%{
+        background-color:yellow;
+    }
+    
+}
+/* Changing a color of a button */
+.btn-change{
+    height: 40px;
+    width: 70px;
+    border-radius: 5px;
+    background-color:yellowgreen
+}
+.btn-change:hover{
+    animation-name: background-color;
+    animation-duration: 700ms;
+    /* Animation no revert at the final */
+    animation-fill-mode: forwards;
+}
+@keyframes background-color{
+    100%{
+        background-color:green;
+    }
+}
