@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Accessability</title>
+    
+</head>
+
+<body>
+    <!-- The tag main encapsule all the main text of the page
+         for example all the tex that arent the banners or 
+         things that are in comun in all the pages -->
+    <main>
+        <!-- We always have to give and alt to the img becouse
+             if the img doesnt load the tex will tell what is in the img -->
+        <img alt = "Img not found" src = "img.jpg">
+        
+        <!-- If we have a title we dont have the necessity to put an
+                 alt because always the title tell what going on in thi img -->
+        <h2>Cat in a table</h2>
+        <img alt = "" src = "catTable.jpg">
+
+        <!-- Article tag is for the text that are write for the user -->
+        <article>
+            <!-- Always the child title have to take only one less than her father -->
+            <h1>Father1</h1>
+            <h2>Child1</h2>
+            <h2>Child2</h2>
+            <h1>Father2</h1>
+            <h2>Child1</h2>
+            <h2>Child2</h2>
+        </article>
+
+        <!-- Nav is to encapsule all the links-->
+        <nav>
+            <ul>
+                <li><a href="https://google.com" target = "_blank">Google</a></li>
+                <li><a href="https://youtube.com" target = "_blank">Youtube</a></li>
+                <li><a href="https://facebook.com" target = "_blank">Facebook</a></li>
+            </ul>
+        </nav>
+
+        <!-- To put audio in the page we use the tag audio with 
+            controls to show the controller play pause then pasing the source  -->
+        <audio controls>
+            <source src ="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- We use figure to put a tag in the img and the we use figcaption to show the image text-->
+        <figure>
+            <img alt = "">
+            <figcaption>
+                This is a image
+            </figcaption>
+
+        </figure>
+
+    </main>
+
+    <!-- Footer is to make the below part of the page where are the links and the copyrigth part -->
+    <footer> &copy; 2022 Luciano Moreno</footer>
+
+    
+
+
+
+</body>
