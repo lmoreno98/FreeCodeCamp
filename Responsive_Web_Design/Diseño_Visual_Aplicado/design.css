@@ -151,7 +151,7 @@ transform: rotate(-45deg) ;
     /* making infinite the animation */ 
     animation-iteration-count: infinite;
     /* animation-timing-function has (linear, ease-out, ease-in) that tell 
-    the animation how to acelerate;
+    the animation how to acelerate;*/
 }
 /* raimbow animations */
 @keyframes rainbow {
